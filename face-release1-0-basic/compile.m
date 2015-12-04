@@ -1,3 +1,4 @@
+cd(fileparts(which('resize.cc')));
 mex -O resize.cc
 mex -O reduce.cc
 mex -O shiftdt.cc
