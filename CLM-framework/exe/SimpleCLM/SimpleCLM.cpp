@@ -448,20 +448,99 @@ int main (int argc, char **argv)
 			if(frame_count%step==0){
 			std::cout << "PRINTING POINTS" << std::endl;
 
-			for (int i = 0; i < clm_model.pdm.NumberOfPoints(); ++i){
-				//if you want to print only certain points, specify so with i == point
-				if (true){
-					std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
-					std::cout << clm_model.detected_landmarks.at<double>(i+68);
-				}
+			//THIS IS SOME CRAZY SHIT RIGHT HERE NO ONE WORRY WE JUST NEED IT FOR OZAN
+			//if you want to print only certain points, specify so with i == point
+			int i = 2;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 5;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 8;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 11;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 14;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 17;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 19;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 21;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 22;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 24;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 26;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 33;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 36;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 38;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 39;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 40;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 42;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 43;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 45;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 47;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 48;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 50;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 51;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 52;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 54;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 56;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 57;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
+			i = 58;
+			std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
+			std::cout << clm_model.detected_landmarks.at<double>(i+68) << ", ";
 
-			}
 			std::cout << std::endl;
 			//std::cout << "Estimated Pose:" << std::endl;
 			//std::cout << "frame, timestamp, confidence, success, Tx, Ty, Tz, Rx, Ry, Rz" << std::endl;
-			std::cout << frame_count + 1 << ", " << time_stamp << ", " << confidence << ", " << detection_success
-									<< ", " << pose_estimate_CLM[0] << ", " << pose_estimate_CLM[1] << ", " << pose_estimate_CLM[2]
-									<< ", " << pose_estimate_CLM[3] << ", " << pose_estimate_CLM[4] << ", " << pose_estimate_CLM[5] << endl;
+			//std::cout << frame_count + 1 << ", " << time_stamp << ", " << confidence << ", " << detection_success
+			//						<< ", " << pose_estimate_CLM[0] << ", " << pose_estimate_CLM[1] << ", " << pose_estimate_CLM[2]
+			//						<< ", " << pose_estimate_CLM[3] << ", " << pose_estimate_CLM[4] << ", " << pose_estimate_CLM[5] << endl;
 			}
 			// detect key presses
 			char character_press = cv::waitKey(1);
