@@ -444,21 +444,25 @@ int main (int argc, char **argv)
 			// print points
 			confidence = 0.5 * (1 - clm_model.detection_certainty);
 			Mat_<double> shape_3D = clm_model.GetShape(fx, fy, cx, cy);
+			int step=2;
+			if(frame_count%step==0){
 			std::cout << "PRINTING POINTS" << std::endl;
+
 			for (int i = 0; i < clm_model.pdm.NumberOfPoints(); ++i){
 				//if you want to print only certain points, specify so with i == point
 				if (true){
 					std::cout << i << ", " << clm_model.detected_landmarks.at<double>(i) << ", ";
-					std::cout << clm_model.detected_landmarks.at<double>(i+68) << std::endl;
+					std::cout << clm_model.detected_landmarks.at<double>(i+68);
 				}
-			}
 
-			std::cout << "Estimated Pose:" << std::endl;
-			std::cout << "frame, timestamp, confidence, success, Tx, Ty, Tz, Rx, Ry, Rz" << std::endl;
+			}
+			std::cout << std::endl;
+			//std::cout << "Estimated Pose:" << std::endl;
+			//std::cout << "frame, timestamp, confidence, success, Tx, Ty, Tz, Rx, Ry, Rz" << std::endl;
 			std::cout << frame_count + 1 << ", " << time_stamp << ", " << confidence << ", " << detection_success
 									<< ", " << pose_estimate_CLM[0] << ", " << pose_estimate_CLM[1] << ", " << pose_estimate_CLM[2]
 									<< ", " << pose_estimate_CLM[3] << ", " << pose_estimate_CLM[4] << ", " << pose_estimate_CLM[5] << endl;
-
+			}
 			// detect key presses
 			char character_press = cv::waitKey(1);
 

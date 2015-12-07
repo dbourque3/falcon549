@@ -1,0 +1,5 @@
+mkfifo points_pipe
+mkfifo poses_pipe
+
+./points.out>points_pipe &
+./poses.out>poses_pipe &
